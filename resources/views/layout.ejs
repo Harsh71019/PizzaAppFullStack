@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Time Pizza App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <nav
+      class="container py-4$smooth mx-auto flex items-center justify-between"
+    >
+      <div>
+        <img src="img/logo.png" alt="logo" />
+      </div>
+      <div>
+        <ul class="flex items-center">
+          <li class="ml-6"><a href="#">Menu</a></li>
+          <li class="ml-6"><a href="#">Offers</a></li>
+          <li class="ml-6"><a href="/register">Register</a></li>
+          <li class="ml-6"><a href="/login">Login</a></li>
+          <li class="ml-6">
+            <a href="#" class="inline-block rounded-full px-4 py-2"
+              ><img src="img/cart.png" alt="Cart"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <%- body %>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

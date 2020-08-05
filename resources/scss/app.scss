@@ -1,40 +1,66 @@
-@import './variables';
+@import "./variables";
 
-body{ 
-    font-family: 'Lato' sans-serif;
-    -webkit-font-smoothing:antialiased;
-    color: $dark;
+body {
+  font-family: "Lato" sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: $dark;
 }
 
 nav li:last-child a {
-    background: $primary;
-    &:hover{
-        background-color: $primary-hover;
-    }
+  background: $primary;
+  &:hover {
+    background-color: $primary-hover;
+  }
 }
 
 nav li a {
-    transition: $smooth;
-    &:hover{
-        color: $primary;
-    }
+  transition: $smooth;
+  &:hover {
+    color: $primary;
+  }
 }
 
 section.hero {
-    background: $secondary;
+  background: $secondary;
 }
 
-.size{
-    background-color: $secondary;
+.size {
+  background-color: $secondary;
 }
 
-.add-to-cart{
-    border: 2px solid $primary;
+.add-to-cart {
+  border: 2px solid $primary;
+  color: $primary;
+  transition: $smooth;
+  &:hover {
+    background: $primary;
+    border-color: $pure;
+    color: $pure;
+  }
+}
+
+.btn-primary {
+  background: $primary;
+  transition: $smooth;
+  &:hover {
+    background: $primary-hover;
+  }
+}
+
+section.cart {
+  background: $secondary;
+  .amount {
     color: $primary;
-    transition: $smooth;
-    &:hover{
-        background: $primary;
-        border-color: $pure;
-        color: $pure;
+  }
+}
+
+section.login {
+  background: $secondary;
+  min-height: 91vh;
+  a {
+    color: $primary;
+    &:hover {
+        color:$primary-hover;
     }
+  }
 }
